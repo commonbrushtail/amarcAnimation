@@ -1,0 +1,853 @@
+$green: #004439;
+$zwizzReg: "zwizzReg", san-serif;
+$zwissBold: "zwizzBold", san-serif;
+$letterFont: "League Script", cursive;
+@font-face {
+  font-family: "zwizzReg";
+  src: url("../font/TTF/Zwizz-Regular.ttf");
+}
+@font-face {
+  font-family: "zwizzBold";
+  src: url("../font/TTF/Zwizz-Bold.ttf");
+}
+@font-face {
+  font-family: "graphikLoop";
+  src: url("../font/graphik_th/GraphikTHLooped-Regular.otf");
+}
+textarea,
+input[type="text"],
+input[type="button"],
+input[type="submit"],
+input[type="email"] {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+:focus {
+  outline: none;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: ANTIALIASED;
+  font-family: $zwizzReg;
+}
+
+.howTo {
+  background-color: $green;
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  color: white;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  .sectionTitle {
+    padding: 0 25px;
+    font-family: $zwizzReg;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 140%;
+  }
+  .howToSlider {
+    width: 100%;
+    height: 100%;
+    margin-top: 25px;
+    scroll-snap-align: start;
+    overflow-y: visible;
+
+    .swiper-wrapper {
+      width: 100%;
+      height: 40vh;
+      overflow: visible;
+
+      .swiper-slide {
+        width: 100%;
+        height: 100%;
+        overflow: visible;
+
+        .slideWrap {
+          width: 100%;
+          height: 100%;
+          position: relative;
+          display: flex;
+          align-items: center;
+          overflow: visible;
+          opacity: 0;
+          transition: all ease 0.2s;
+          .tabletWrap {
+            width: 300px;
+            height: 300px;
+            margin: 0 auto;
+            position: relative;
+            .tablet {
+              width: auto;
+              height: 100%;
+              object-fit: contain;
+              position: absolute;
+              left: 50%;
+              transform: translateX(-50%);
+            }
+            .bubble1 {
+              width: 20%;
+              height: auto;
+              object-fit: contain;
+              position: absolute;
+              top: 14%;
+              right: 21%;
+            }
+            .bubble2 {
+              width: 20%;
+              height: auto;
+
+              object-fit: contain;
+              position: absolute;
+              top: 24%;
+              right: 10%;
+            }
+            .bubble3 {
+              width: 20%;
+              height: auto;
+
+              object-fit: contain;
+              position: absolute;
+              top: 33%;
+              right: 17%;
+            }
+          }
+          .paperWrap {
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .paper {
+              width: 100%;
+              height: auto;
+              object-fit: contain;
+            }
+            .inputFormWrap {
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              left: 0;
+              top: 0;
+              .inputForm {
+                width: 70%;
+                height: auto;
+                object-fit: contain;
+                position: relative;
+                left: 15%;
+                top: 10%;
+              }
+            }
+            .pen {
+              position: absolute;
+              top: -30%;
+              right: 45%;
+              width: 50%;
+            }
+          }
+          .boxWrap {
+            width: 250px;
+            height: 250px;
+            margin: 0 auto;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .box {
+              width: 100%;
+              object-fit: contain;
+            }
+            .box2 {
+              width: 100%;
+              object-fit: contain;
+              position: absolute;
+              opacity: 0;
+            }
+            .stampRight {
+              position: absolute;
+              width: 100%;
+              object-fit: contain;
+              right: -18%;
+              top: 6%;
+            }
+            .coverRight {
+              content: "";
+              position: absolute;
+              width: 24%;
+              height: 20%;
+              transform: translate(76%, 19%);
+              background-color: #cdcdcd;
+            }
+          }
+          .bagWrap {
+            width: 190px;
+            height: 290px;
+            margin: 0 auto;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .bag {
+              width: 100%;
+              height: 80%;
+              object-fit: contain;
+            }
+            .letterWrap {
+              position: absolute;
+              text-align: center;
+              color: black;
+              font-size: 190%;
+            }
+            .rubber {
+              position: absolute;
+              width: 40%;
+              top: 87%;
+              right: -60%;
+              transform: translate(-50%, -67%) rotate(-90deg);
+            }
+            .useMe {
+              width: 50%;
+              object-fit: contain;
+              position: absolute;
+              right: -40%;
+              top: 45%;
+              transform: rotate(-37deg);
+            }
+          }
+          .labWrap {
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .lab {
+              width: 100%;
+              height: 100%;
+              object-fit: contain;
+            }
+            .particle1 {
+              position: absolute;
+              right: -14%;
+              top: 30%;
+              width: 20%;
+            }
+            .particle2 {
+              position: absolute;
+              right: 2%;
+              top: 1%;
+              width: 33%;
+            }
+            .liquidWrap1 {
+              position: absolute;
+              left: 12%;
+              top: 72%;
+              width: 22%;
+              height: 18%;
+              .mainLiquid .liquidOne {
+                background-color: red;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                mix-blend-mode: screen;
+                position: absolute;
+              }
+              .subLiquid1 {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                left: 25%;
+                overflow: hidden;
+                mix-blend-mode: screen;
+                .liquidOne {
+                  content: "";
+                  width: 100%;
+                  height: 100%;
+                  position: absolute;
+                  left: 0;
+                  background-color: red;
+                  mix-blend-mode: screen;
+                  transform: translate(3%, 10%) rotate(70deg);
+                }
+              }
+              .subLiquid2 {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                right: 24%;
+                overflow: hidden;
+                mix-blend-mode: screen;
+                bottom: 0;
+                .liquidOne {
+                  content: "";
+                  width: 100%;
+                  height: 100%;
+                  position: absolute;
+                  left: 0;
+                  background-color: red;
+                  mix-blend-mode: screen;
+                  transform: translate(4%, 4%) rotate(106deg);
+                  border-radius: 11%;
+                }
+              }
+            }
+            .liquidCover1 {
+              position: absolute;
+              left: 7%;
+              top: 72%;
+              width: 33%;
+              height: 33%;
+              background-color: green;
+              mix-blend-mode: screen;
+              border-radius: 15%;
+              animation: spin 6s ease-in-out infinite;
+              display: none;
+            }
+
+            .liquidTwo {
+              background-color: red;
+              width: 7%;
+              height: 49%;
+              position: absolute;
+              mix-blend-mode: screen;
+              bottom: 20%;
+              left: 41.5%;
+              border-top: rgba(255, 255, 255, 0.308) 0.5px solid;
+            }
+            .liquidWrap3 {
+              width: 43%;
+              height: 41%;
+              position: absolute;
+              border-radius: 50%;
+              bottom: 22%;
+              left: 38.5%;
+              overflow: hidden;
+              .liquidThree {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                left: 0;
+                background-color: blue;
+                mix-blend-mode: screen;
+                top: 50%;
+                border-top: rgba(255, 255, 255, 0.308) 0.5px solid;
+              }
+            }
+            .liquidWrap4 {
+              position: absolute;
+              left: 78%;
+              top: 68%;
+              width: 11%;
+              height: 18%;
+              .mainLiquid {
+                background-color: red;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                mix-blend-mode: screen;
+                position: absolute;
+              }
+              .subLiquid1 {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                left: 42%;
+                overflow: hidden;
+                mix-blend-mode: screen;
+                .liquidFour {
+                  content: "";
+                  width: 100%;
+                  height: 100%;
+                  position: absolute;
+                  left: 0;
+                  background-color: red;
+                  mix-blend-mode: screen;
+                  transform: translate(-15%, 2%) rotate(-13deg);
+                }
+              }
+              .subLiquid2 {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                right: 24%;
+                overflow: hidden;
+                mix-blend-mode: screen;
+                bottom: 0;
+                .liquidFour {
+                  content: "";
+                  width: 100%;
+                  height: 100%;
+                  position: absolute;
+                  left: 0%;
+                  background-color: red;
+                  mix-blend-mode: screen;
+                  transform: translate(4%, 4%) rotate(193deg);
+                  border-radius: 11%;
+                }
+              }
+            }
+          }
+          .msgWrap {
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .msg {
+              position: absolute;
+              width: 100%;
+              height: 100%;
+            }
+            .fontWrap1 {
+              top: 28%;
+              height: 3%;
+              left: 28%;
+              position: absolute;
+              width: 45%;
+              overflow: hidden;
+              span {
+                font-family: $letterFont;
+                font-size: 10%;
+                position: absolute;
+                left: 0;
+                color: black;
+              }
+              .cover1 {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                left: 0;
+                background-color: #f5f5f5;
+              }
+            }
+            .fontWrap2 {
+              top: 32%;
+              left: 28%;
+              position: absolute;
+              width: 45%;
+              overflow: hidden;
+              height: 3%;
+              span {
+                font-family: $letterFont;
+                font-size: 10%;
+                position: absolute;
+                color: black;
+                top: 0;
+                left: 0%;
+              }
+              .cover2 {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                left: 0;
+                background-color: #f5f5f5;
+              }
+            }
+            .fontWrap3 {
+              top: 36%;
+              left: 28%;
+              position: absolute;
+              width: 45%;
+              overflow: hidden;
+              height: 3%;
+              span {
+                font-family: $letterFont;
+                font-size: 10%;
+                position: absolute;
+                color: black;
+                top: 0%;
+                left: 0%;
+                height: 100%;
+              }
+              .cover3 {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                left: 0;
+                top: 0%;
+                background-color: #f5f5f5;
+              }
+            }
+            .fontWrap4 {
+              top: 40%;
+              left: 28%;
+              position: absolute;
+              width: 45%;
+              overflow: hidden;
+              height: 3%;
+              span {
+                font-family: $letterFont;
+                font-size: 10%;
+                position: absolute;
+                color: black;
+                top: 0;
+                left: 0%;
+                height: 100%;
+              }
+              .cover4 {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                left: 0;
+                background-color: #f5f5f5;
+              }
+            }
+            .rubber2 {
+              position: absolute;
+              width: 25%;
+              transform: rotate(180deg);
+              top: 20.5%;
+              right: 25%;
+            }
+          }
+          .certificateWrap {
+            width: 220px;
+            height: 220px;
+            margin: 0 auto;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .certificate {
+              width: 100%;
+              height: 100%;
+              object-fit: contain;
+            }
+            .stamp {
+              position: absolute;
+              left: 45%;
+              top: 39%;
+              width: 75%;
+              transform: rotate(0deg);
+              animation: circular 4s linear infinite;
+            }
+            @keyframes circular {
+              from {
+                transform: rotate(0deg) translateX(2%) rotate(0deg);
+              }
+              to {
+                transform: rotate(360deg) translateX(2%) rotate(-360deg);
+              }
+            }
+          }
+        }
+      }
+      .swiper-slide-active {
+        .slideWrap {
+          opacity: 1;
+          transition: all ease-in-out 0.2s;
+        }
+      }
+    }
+    /* for desktop only*/
+    .swiper-pagination {
+      justify-content: center;
+      display: none;
+      @media (min-width: 1024px) {
+        display: flex;
+      }
+      .pagiBullet {
+        margin: 0;
+        margin-right: 25px;
+        width: initial;
+        height: initial;
+        border-radius: 0;
+        background: none;
+        display: flex;
+        align-items: center;
+        opacity: 1;
+        position: relative;
+      }
+      .pagiBullet:before {
+        content: "";
+        width: 4px;
+        height: 4px;
+        background-color: white;
+        position: relative;
+        display: block;
+        border-radius: 50%;
+        margin-right: 25px;
+      }
+      .pagiBullet:first-child::before {
+        content: none;
+      }
+      .pagiBullet:after {
+        content: "";
+        width: 0;
+        height: 1px;
+        position: absolute;
+        background-color: white;
+        bottom: -3px;
+        right: 0;
+        transition: all ease-in-out 0.2s;
+        transform: translateX(-95%);
+        opacity: 0;
+      }
+      .pagiBullet.swiper-pagination-bullet-active:first-child::after {
+        content: "";
+        width: calc(100%);
+        opacity: 1;
+        transition: all ease-in-out 0.8s;
+        transform: translateX(0);
+      }
+      .pagiBullet.swiper-pagination-bullet-active:after {
+        content: "";
+        width: calc(100% - 28px);
+        transition: all ease-in-out 0.8s;
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+    .content {
+      padding: 0 25px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: all 2s ease-out;
+
+      .pageNum {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: $zwizzReg;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 140%;
+        .dash {
+          width: 20px;
+          height: 1px;
+          margin: 0 4px;
+          background-color: white;
+          display: inline-block;
+        }
+      }
+      .titleWrap {
+        margin-top: 5px;
+        transition: all ease-in-out 2s;
+        height: 100%;
+
+        .title {
+          text-align: center;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 30px;
+          line-height: 110%;
+          font-family: $zwizzReg;
+          height: 100%;
+          transition: all ease-in-out 2s;
+          min-height: 84px;
+          display: flex;
+          align-items: center;
+        }
+      }
+      .description {
+        text-align: center;
+        color: rgba(255, 255, 255, 0.61);
+        opacity: 0.6;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 140%;
+        min-height: 56px;
+        display: flex;
+        align-items: center;
+        font-family: "graphikLoop";
+      }
+      .buttonNext {
+        border: solid 1px white;
+        padding: 5px 10px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 26px;
+        margin-top: 25px;
+        cursor: pointer;
+      }
+      .buttonNext:after {
+        background-image: url("../image/rightArrow.png");
+        content: "";
+        background-repeat: no-repeat;
+        width: 25px;
+        height: 15px;
+        background-size: contain;
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 15px;
+      }
+      .lastButton {
+        border: solid 1px white;
+        padding: 5px 10px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 26px;
+        margin-top: 25px;
+        cursor: pointer;
+
+        .replayButton {
+          filter: invert(100);
+          width: 18px;
+          height: 18px;
+          object-fit: contain;
+          position: relative;
+          top: 1.5px;
+          margin-right: 3px;
+        }
+      }
+      .lastButton:after {
+        background-image: url("../image/rightArrow.png");
+        content: none;
+        background-repeat: no-repeat;
+        width: 25px;
+        height: 15px;
+        background-size: contain;
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 15px;
+      }
+    }
+    .mobilePagination {
+      transition: all 2s ease-out;
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      @media (min-width: 1024px) {
+        display: none;
+      }
+      .bullet {
+        width: 9px;
+        height: 9px;
+        border: solid 0.5px white;
+        border-radius: 50%;
+        margin-left: 10px;
+        transition: all ease-in-out 0.5s;
+      }
+      .bullet.active {
+        background-color: white;
+      }
+      .bullet:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .howTo {
+    padding: 0 12vw;
+    min-height: initial;
+    overflow: initial;
+    padding-bottom: 50px;
+    overflow: hidden;
+    padding-top: 50px;
+    .sectionTitle {
+      padding: initial;
+    }
+    .howToSlider {
+      display: flex;
+      margin-top: 100px;
+      position: relative;
+      .slider {
+        width: 60%;
+
+        .swiper-wrapper {
+          .swiper-slide {
+            .tabletWrap {
+              width: 30vw;
+              height: 30vw;
+            }
+            .paperWrap {
+              width: 20vw;
+              height: 20vw;
+            }
+            .boxWrap {
+              width: 30vw;
+              height: 30vw;
+            }
+            .bagWrap {
+              width: 30vw;
+              height: 30vw;
+              .letterWrap {
+                font-size: 280%;
+              }
+              .rubber {
+                width: 25%;
+                right: -17%;
+                top: 85%;
+              }
+              .useMe {
+                width: 22%;
+                transform: rotate(-23deg);
+                right: 0;
+                top: 51%;
+              }
+            }
+            .labWrap {
+              width: 25vw;
+              height: 25vw;
+            }
+            .msgWrap {
+              width: 25vw;
+              height: 25vw;
+              .fontWrap {
+                font-size: 10vw;
+              }
+            }
+            .certificateWrap {
+              width: 25vw;
+              height: 25vw;
+            }
+          }
+        }
+      }
+      .content {
+        width: 40%;
+        position: relative;
+        z-index: 10;
+        align-items: flex-start;
+
+        .titleWrap {
+          margin-top: initial;
+          height: initial;
+          .title {
+            text-align: initial;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            font-size: 40px;
+            min-height: 88px;
+          }
+        }
+        .description {
+          font-size: 24px;
+          min-height: 66px;
+          margin-top: 15px;
+          margin-bottom: 10px;
+        }
+      }
+      .swiper-pagination {
+        margin-top: 80px;
+        position: relative;
+        bottom: initial;
+        top: initial;
+        width: max-content;
+        z-index: 12;
+      }
+    }
+  }
+}
+
+.test {
+  height: 100vh;
+  width: 100%;
+  background-color: $green;
+}

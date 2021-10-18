@@ -1,0 +1,1064 @@
+@font-face {
+  font-family: "zwizzReg";
+  src: url("../font/TTF/Zwizz-Regular.ttf");
+}
+
+@font-face {
+  font-family: "zwizzBold";
+  src: url("../font/TTF/Zwizz-Bold.ttf");
+}
+
+@font-face {
+  font-family: "graphikLoop";
+  src: url("../font/graphik_th/GraphikTHLooped-Regular.otf");
+}
+
+textarea,
+input[type="text"],
+input[type="button"],
+input[type="submit"],
+input[type="email"] {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+:focus {
+  outline: none;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: ANTIALIASED;
+  font-family: "zwizzReg", san-serif;
+}
+
+.howTo {
+  background-color: #004439;
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  color: white;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.howTo .sectionTitle {
+  padding: 0 25px;
+  font-family: "zwizzReg", san-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 140%;
+}
+
+.howTo .howToSlider {
+  width: 100%;
+  height: 100%;
+  margin-top: 25px;
+  scroll-snap-align: start;
+  overflow-y: visible;
+  /* for desktop only*/
+}
+
+.howTo .howToSlider .swiper-wrapper {
+  width: 100%;
+  height: 40vh;
+  overflow: visible;
+}
+
+.howTo .howToSlider .swiper-wrapper .swiper-slide {
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.howTo .howToSlider .swiper-wrapper .swiper-slide .slideWrap {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: visible;
+  opacity: 0;
+  -webkit-transition: all ease 0.2s;
+  transition: all ease 0.2s;
+}
+
+.howTo .howToSlider .swiper-wrapper .swiper-slide .slideWrap .tabletWrap {
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.howTo .howToSlider .swiper-wrapper .swiper-slide .slideWrap .tabletWrap .tablet {
+  width: auto;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.howTo .howToSlider .swiper-wrapper .swiper-slide .slideWrap .tabletWrap .bubble1 {
+  width: 20%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+  position: absolute;
+  top: 14%;
+  right: 21%;
+}
+
+.howTo .howToSlider .swiper-wrapper .swiper-slide .slideWrap .tabletWrap .bubble2 {
+  width: 20%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+  position: absolute;
+  top: 24%;
+  right: 10%;
+}
+
+.howTo .howToSlider .swiper-wrapper .swiper-slide .slideWrap .tabletWrap .bubble3 {
+  width: 20%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+  position: absolute;
+  top: 33%;
+  right: 17%;
+}
+
+.howTo .howToSlider .swiper-wrapper .swiper-slide .slideWrap .paperWrap {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.howTo .howToSlider .swiper-wrapper .swiper-slide .slideWrap .paperWrap .paper {
+  width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.howTo .howToSlider .swiper-wrapper .swiper-slide .slideWrap .paperWrap .inputFormWrap {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+.howTo .howToSlider .swiper-wrapper .swiper-slide .slideWrap .paperWrap .inputFormWrap .inputForm {
+  width: 70%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+  position: relative;
+  left: 15%;
+  top: 10%;
+}
+
+.howTo .howToSlider .swiper-wrapper .swiper-slide .slideWrap .paperWrap .pen {
+  position: absolute;
+  top: -30%;
+  right: 45%;
+  width: 50%;
+}
+
+.howTo .howToSlider .swiper-wrapper .swiper-slide .slideWrap .boxWrap {
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.howTo .howToSlider .swiper-wrapper .swiper-slide .slideWrap .boxWrap .box {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.howTo .howToSlider .swiper-wrapper .swiper-slide .slideWrap .boxWrap .box2 {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  position: absolute;
+  opacity: 0;
+}
+
+.howTo .howToSlider .swiper-wrapper .swiper-slide .slideWrap .boxWrap .stampRight {
+  position: absolute;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  right: -18%;
+  top: 6%;
+}
+
+.howTo .howToSlider .swiper-wrapper .swiper-slide .slideWrap .boxWrap .coverRight {
+  content: "";
+  position: absolute;
+  width: 24%;
+  height: 20%;
+  -webkit-transform: translate(76%, 19%);
+          transform: translate(76%, 19%);
+  background-color: #cdcdcd;
+}
+
+.howTo .howToSlider .swiper-wrapper .swiper-slide .slideWrap .bagWrap {
+  width: 190px;
+  height: 290px;
+  margin: 0 auto;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.howTo .howToSlider .swiper-wrapper .swiper-slide .slideWrap .bagWrap .bag {
+  width: 100%;
+  height: 80%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.howTo .howToSlider .swiper-wrapper .swiper-slide .slideWrap .bagWrap .letterWrap {
+  position: absolute;
+  text-align: center;
+  color: black;
+  font-size: 190%;
+}
+
+.howTo .howToSlider .swiper-wrapper .swiper-slide .slideWrap .bagWrap .rubber {
+  position: absolute;
+  width: 40%;
+  top: 87%;
+  right: -60%;
+  -webkit-transform: translate(-50%, -67%) rotate(-90deg);
+          transform: translate(-50%, -67%) rotate(-90deg);
+}
+
+.howTo .howToSlider .swiper-wrapper .swiper-slide .slideWrap .bagWrap .useMe {
+  width: 50%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  position: absolute;
+  right: -40%;
+  top: 45%;
+  -webkit-transform: rotate(-37deg);
+          transform: rotate(-37deg);
+}
+
+.howTo .howToSlider .swiper-wrapper .swiper-slide .slideWrap .labWrap {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.howTo .howToSlider .swiper-wrapper .swiper-slide .slideWrap .labWrap .lab {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.howTo .howToSlider .swiper-wrapper .swiper-slide .slideWrap .labWrap .particle1 {
+  position: absolute;
+  right: -14%;
+  top: 30%;
+  width: 20%;
+}
+
+.howTo .howToSlider .swiper-wrapper .swiper-slide .slideWrap .labWrap .particle2 {
+  position: absolute;
+  right: 2%;
+  top: 1%;
+  width: 33%;
+}
+
+.howTo .howToSlider .swiper-wrapper .swiper-slide .slideWrap .labWrap .liquidWrap1 {
+  position: absolute;
+  left: 12%;
+  top: 72%;
+  width: 22%;
+  height: 18%;
+}
+
+.howTo .howToSlider .swiper-wrapper .swiper-slide .slideWrap .labWrap .liquidWrap1 .mainLiquid .liquidOne {
+  background-color: red;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: screen;
+  position: absolute;
+}
+
+.howTo .howToSlider .swiper-wrapper .swiper-slide .slideWrap .labWrap .liquidWrap1 .subLiquid1 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 25%;
+  overflow: hidden;
+  mix-blend-mode: screen;
+}
+
+.howTo .howToSlider .swiper-wrapper .swiper-slide .slideWrap .labWrap .liquidWrap1 .subLiquid1 .liquidOne {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  background-color: red;
+  mix-blend-mode: screen;
+  -webkit-transform: translate(3%, 10%) rotate(70deg);
+          transform: translate(3%, 10%) rotate(70deg);
+}
+
+.howTo .howToSlider .swiper-wrapper .swiper-slide .slideWrap .labWrap .liquidWrap1 .subLiquid2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  right: 24%;
+  overflow: hidden;
+  mix-blend-mode: screen;
+  bottom: 0;
+}
+
+.howTo .howToSlider .swiper-wrapper .swiper-slide .slideWrap .labWrap .liquidWrap1 .subLiquid2 .liquidOne {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  background-color: red;
+  mix-blend-mode: screen;
+  -webkit-transform: translate(4%, 4%) rotate(106deg);
+          transform: translate(4%, 4%) rotate(106deg);
+  border-radius: 11%;
+}
+
+.howTo .howToSlider .swiper-wrapper .swiper-slide .slideWrap .labWrap .liquidCover1 {
+  position: absolute;
+  left: 7%;
+  top: 72%;
+  width: 33%;
+  height: 33%;
+  background-color: green;
+  mix-blend-mode: screen;
+  border-radius: 15%;
+  -webkit-animation: spin 6s ease-in-out infinite;
+          animation: spin 6s ease-in-out infinite;
+  display: none;
+}
+
+.howTo .howToSlider .swiper-wrapper .swiper-slide .slideWrap .labWrap .liquidTwo {
+  background-color: red;
+  width: 7%;
+  height: 49%;
+  position: absolute;
+  mix-blend-mode: screen;
+  bottom: 20%;
+  left: 41.5%;
+  border-top: rgba(255, 255, 255, 0.308) 0.5px solid;
+}
+
+.howTo .howToSlider .swiper-wrapper .swiper-slide .slideWrap .labWrap .liquidWrap3 {
+  width: 43%;
+  height: 41%;
+  position: absolute;
+  border-radius: 50%;
+  bottom: 22%;
+  left: 38.5%;
+  overflow: hidden;
+}
+
+.howTo .howToSlider .swiper-wrapper .swiper-slide .slideWrap .labWrap .liquidWrap3 .liquidThree {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  background-color: blue;
+  mix-blend-mode: screen;
+  top: 50%;
+  border-top: rgba(255, 255, 255, 0.308) 0.5px solid;
+}
+
+.howTo .howToSlider .swiper-wrapper .swiper-slide .slideWrap .labWrap .liquidWrap4 {
+  position: absolute;
+  left: 78%;
+  top: 68%;
+  width: 11%;
+  height: 18%;
+}
+
+.howTo .howToSlider .swiper-wrapper .swiper-slide .slideWrap .labWrap .liquidWrap4 .mainLiquid {
+  background-color: red;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: screen;
+  position: absolute;
+}
+
+.howTo .howToSlider .swiper-wrapper .swiper-slide .slideWrap .labWrap .liquidWrap4 .subLiquid1 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 42%;
+  overflow: hidden;
+  mix-blend-mode: screen;
+}
+
+.howTo .howToSlider .swiper-wrapper .swiper-slide .slideWrap .labWrap .liquidWrap4 .subLiquid1 .liquidFour {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  background-color: red;
+  mix-blend-mode: screen;
+  -webkit-transform: translate(-15%, 2%) rotate(-13deg);
+          transform: translate(-15%, 2%) rotate(-13deg);
+}
+
+.howTo .howToSlider .swiper-wrapper .swiper-slide .slideWrap .labWrap .liquidWrap4 .subLiquid2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  right: 24%;
+  overflow: hidden;
+  mix-blend-mode: screen;
+  bottom: 0;
+}
+
+.howTo .howToSlider .swiper-wrapper .swiper-slide .slideWrap .labWrap .liquidWrap4 .subLiquid2 .liquidFour {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0%;
+  background-color: red;
+  mix-blend-mode: screen;
+  -webkit-transform: translate(4%, 4%) rotate(193deg);
+          transform: translate(4%, 4%) rotate(193deg);
+  border-radius: 11%;
+}
+
+.howTo .howToSlider .swiper-wrapper .swiper-slide .slideWrap .msgWrap {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.howTo .howToSlider .swiper-wrapper .swiper-slide .slideWrap .msgWrap .msg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.howTo .howToSlider .swiper-wrapper .swiper-slide .slideWrap .msgWrap .fontWrap1 {
+  top: 28%;
+  height: 3%;
+  left: 28%;
+  position: absolute;
+  width: 45%;
+  overflow: hidden;
+}
+
+.howTo .howToSlider .swiper-wrapper .swiper-slide .slideWrap .msgWrap .fontWrap1 span {
+  font-family: "League Script", cursive;
+  font-size: 10%;
+  position: absolute;
+  left: 0;
+  color: black;
+}
+
+.howTo .howToSlider .swiper-wrapper .swiper-slide .slideWrap .msgWrap .fontWrap1 .cover1 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  background-color: #f5f5f5;
+}
+
+.howTo .howToSlider .swiper-wrapper .swiper-slide .slideWrap .msgWrap .fontWrap2 {
+  top: 32%;
+  left: 28%;
+  position: absolute;
+  width: 45%;
+  overflow: hidden;
+  height: 3%;
+}
+
+.howTo .howToSlider .swiper-wrapper .swiper-slide .slideWrap .msgWrap .fontWrap2 span {
+  font-family: "League Script", cursive;
+  font-size: 10%;
+  position: absolute;
+  color: black;
+  top: 0;
+  left: 0%;
+}
+
+.howTo .howToSlider .swiper-wrapper .swiper-slide .slideWrap .msgWrap .fontWrap2 .cover2 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  background-color: #f5f5f5;
+}
+
+.howTo .howToSlider .swiper-wrapper .swiper-slide .slideWrap .msgWrap .fontWrap3 {
+  top: 36%;
+  left: 28%;
+  position: absolute;
+  width: 45%;
+  overflow: hidden;
+  height: 3%;
+}
+
+.howTo .howToSlider .swiper-wrapper .swiper-slide .slideWrap .msgWrap .fontWrap3 span {
+  font-family: "League Script", cursive;
+  font-size: 10%;
+  position: absolute;
+  color: black;
+  top: 0%;
+  left: 0%;
+  height: 100%;
+}
+
+.howTo .howToSlider .swiper-wrapper .swiper-slide .slideWrap .msgWrap .fontWrap3 .cover3 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0%;
+  background-color: #f5f5f5;
+}
+
+.howTo .howToSlider .swiper-wrapper .swiper-slide .slideWrap .msgWrap .fontWrap4 {
+  top: 40%;
+  left: 28%;
+  position: absolute;
+  width: 45%;
+  overflow: hidden;
+  height: 3%;
+}
+
+.howTo .howToSlider .swiper-wrapper .swiper-slide .slideWrap .msgWrap .fontWrap4 span {
+  font-family: "League Script", cursive;
+  font-size: 10%;
+  position: absolute;
+  color: black;
+  top: 0;
+  left: 0%;
+  height: 100%;
+}
+
+.howTo .howToSlider .swiper-wrapper .swiper-slide .slideWrap .msgWrap .fontWrap4 .cover4 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  background-color: #f5f5f5;
+}
+
+.howTo .howToSlider .swiper-wrapper .swiper-slide .slideWrap .msgWrap .rubber2 {
+  position: absolute;
+  width: 25%;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  top: 20.5%;
+  right: 25%;
+}
+
+.howTo .howToSlider .swiper-wrapper .swiper-slide .slideWrap .certificateWrap {
+  width: 220px;
+  height: 220px;
+  margin: 0 auto;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.howTo .howToSlider .swiper-wrapper .swiper-slide .slideWrap .certificateWrap .certificate {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.howTo .howToSlider .swiper-wrapper .swiper-slide .slideWrap .certificateWrap .stamp {
+  position: absolute;
+  left: 45%;
+  top: 39%;
+  width: 75%;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-animation: circular 4s linear infinite;
+          animation: circular 4s linear infinite;
+}
+
+@-webkit-keyframes circular {
+  from {
+    -webkit-transform: rotate(0deg) translateX(2%) rotate(0deg);
+            transform: rotate(0deg) translateX(2%) rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg) translateX(2%) rotate(-360deg);
+            transform: rotate(360deg) translateX(2%) rotate(-360deg);
+  }
+}
+
+@keyframes circular {
+  from {
+    -webkit-transform: rotate(0deg) translateX(2%) rotate(0deg);
+            transform: rotate(0deg) translateX(2%) rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg) translateX(2%) rotate(-360deg);
+            transform: rotate(360deg) translateX(2%) rotate(-360deg);
+  }
+}
+
+.howTo .howToSlider .swiper-wrapper .swiper-slide-active .slideWrap {
+  opacity: 1;
+  -webkit-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
+}
+
+.howTo .howToSlider .swiper-pagination {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .howTo .howToSlider .swiper-pagination {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.howTo .howToSlider .swiper-pagination .pagiBullet {
+  margin: 0;
+  margin-right: 25px;
+  width: initial;
+  height: initial;
+  border-radius: 0;
+  background: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 1;
+  position: relative;
+}
+
+.howTo .howToSlider .swiper-pagination .pagiBullet:before {
+  content: "";
+  width: 4px;
+  height: 4px;
+  background-color: white;
+  position: relative;
+  display: block;
+  border-radius: 50%;
+  margin-right: 25px;
+}
+
+.howTo .howToSlider .swiper-pagination .pagiBullet:first-child::before {
+  content: none;
+}
+
+.howTo .howToSlider .swiper-pagination .pagiBullet:after {
+  content: "";
+  width: 0;
+  height: 1px;
+  position: absolute;
+  background-color: white;
+  bottom: -3px;
+  right: 0;
+  -webkit-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
+  -webkit-transform: translateX(-95%);
+          transform: translateX(-95%);
+  opacity: 0;
+}
+
+.howTo .howToSlider .swiper-pagination .pagiBullet.swiper-pagination-bullet-active:first-child::after {
+  content: "";
+  width: calc(100%);
+  opacity: 1;
+  -webkit-transition: all ease-in-out 0.8s;
+  transition: all ease-in-out 0.8s;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.howTo .howToSlider .swiper-pagination .pagiBullet.swiper-pagination-bullet-active:after {
+  content: "";
+  width: calc(100% - 28px);
+  -webkit-transition: all ease-in-out 0.8s;
+  transition: all ease-in-out 0.8s;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  opacity: 1;
+}
+
+.howTo .howToSlider .content {
+  padding: 0 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 2s ease-out;
+  transition: all 2s ease-out;
+}
+
+.howTo .howToSlider .content .pageNum {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "zwizzReg", san-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 140%;
+}
+
+.howTo .howToSlider .content .pageNum .dash {
+  width: 20px;
+  height: 1px;
+  margin: 0 4px;
+  background-color: white;
+  display: inline-block;
+}
+
+.howTo .howToSlider .content .titleWrap {
+  margin-top: 5px;
+  -webkit-transition: all ease-in-out 2s;
+  transition: all ease-in-out 2s;
+  height: 100%;
+}
+
+.howTo .howToSlider .content .titleWrap .title {
+  text-align: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 110%;
+  font-family: "zwizzReg", san-serif;
+  height: 100%;
+  -webkit-transition: all ease-in-out 2s;
+  transition: all ease-in-out 2s;
+  min-height: 84px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.howTo .howToSlider .content .description {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.61);
+  opacity: 0.6;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 140%;
+  min-height: 56px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "graphikLoop";
+}
+
+.howTo .howToSlider .content .buttonNext {
+  border: solid 1px white;
+  padding: 5px 10px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  margin-top: 25px;
+  cursor: pointer;
+}
+
+.howTo .howToSlider .content .buttonNext:after {
+  background-image: url("../image/rightArrow.png");
+  content: "";
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 15px;
+  background-size: contain;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 15px;
+}
+
+.howTo .howToSlider .content .lastButton {
+  border: solid 1px white;
+  padding: 5px 10px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  margin-top: 25px;
+  cursor: pointer;
+}
+
+.howTo .howToSlider .content .lastButton .replayButton {
+  -webkit-filter: invert(100);
+          filter: invert(100);
+  width: 18px;
+  height: 18px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  position: relative;
+  top: 1.5px;
+  margin-right: 3px;
+}
+
+.howTo .howToSlider .content .lastButton:after {
+  background-image: url("../image/rightArrow.png");
+  content: none;
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 15px;
+  background-size: contain;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 15px;
+}
+
+.howTo .howToSlider .mobilePagination {
+  -webkit-transition: all 2s ease-out;
+  transition: all 2s ease-out;
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (min-width: 1024px) {
+  .howTo .howToSlider .mobilePagination {
+    display: none;
+  }
+}
+
+.howTo .howToSlider .mobilePagination .bullet {
+  width: 9px;
+  height: 9px;
+  border: solid 0.5px white;
+  border-radius: 50%;
+  margin-left: 10px;
+  -webkit-transition: all ease-in-out 0.5s;
+  transition: all ease-in-out 0.5s;
+}
+
+.howTo .howToSlider .mobilePagination .bullet.active {
+  background-color: white;
+}
+
+.howTo .howToSlider .mobilePagination .bullet:first-child {
+  margin-left: 0;
+}
+
+@media (min-width: 1024px) {
+  .howTo {
+    padding: 0 12vw;
+    min-height: initial;
+    overflow: initial;
+    padding-bottom: 50px;
+    overflow: hidden;
+    padding-top: 50px;
+  }
+  .howTo .sectionTitle {
+    padding: initial;
+  }
+  .howTo .howToSlider {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 100px;
+    position: relative;
+  }
+  .howTo .howToSlider .slider {
+    width: 60%;
+  }
+  .howTo .howToSlider .slider .swiper-wrapper .swiper-slide .tabletWrap {
+    width: 30vw;
+    height: 30vw;
+  }
+  .howTo .howToSlider .slider .swiper-wrapper .swiper-slide .paperWrap {
+    width: 20vw;
+    height: 20vw;
+  }
+  .howTo .howToSlider .slider .swiper-wrapper .swiper-slide .boxWrap {
+    width: 30vw;
+    height: 30vw;
+  }
+  .howTo .howToSlider .slider .swiper-wrapper .swiper-slide .bagWrap {
+    width: 30vw;
+    height: 30vw;
+  }
+  .howTo .howToSlider .slider .swiper-wrapper .swiper-slide .bagWrap .letterWrap {
+    font-size: 280%;
+  }
+  .howTo .howToSlider .slider .swiper-wrapper .swiper-slide .bagWrap .rubber {
+    width: 25%;
+    right: -17%;
+    top: 85%;
+  }
+  .howTo .howToSlider .slider .swiper-wrapper .swiper-slide .bagWrap .useMe {
+    width: 22%;
+    -webkit-transform: rotate(-23deg);
+            transform: rotate(-23deg);
+    right: 0;
+    top: 51%;
+  }
+  .howTo .howToSlider .slider .swiper-wrapper .swiper-slide .labWrap {
+    width: 25vw;
+    height: 25vw;
+  }
+  .howTo .howToSlider .slider .swiper-wrapper .swiper-slide .msgWrap {
+    width: 25vw;
+    height: 25vw;
+  }
+  .howTo .howToSlider .slider .swiper-wrapper .swiper-slide .msgWrap .fontWrap {
+    font-size: 10vw;
+  }
+  .howTo .howToSlider .slider .swiper-wrapper .swiper-slide .certificateWrap {
+    width: 25vw;
+    height: 25vw;
+  }
+  .howTo .howToSlider .content {
+    width: 40%;
+    position: relative;
+    z-index: 10;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .howTo .howToSlider .content .titleWrap {
+    margin-top: initial;
+    height: initial;
+  }
+  .howTo .howToSlider .content .titleWrap .title {
+    text-align: initial;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    font-size: 40px;
+    min-height: 88px;
+  }
+  .howTo .howToSlider .content .description {
+    font-size: 24px;
+    min-height: 66px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+  .howTo .howToSlider .swiper-pagination {
+    margin-top: 80px;
+    position: relative;
+    bottom: initial;
+    top: initial;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    z-index: 12;
+  }
+}
+
+.test {
+  height: 100vh;
+  width: 100%;
+  background-color: #004439;
+}
+/*# sourceMappingURL=style.css.map */
